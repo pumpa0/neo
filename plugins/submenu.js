@@ -21,12 +21,12 @@ const submenu1 = prefix => {
 •  ${prefix}tikwm *link*
 •  ${prefix}twitter *link*
 •  ${prefix}ytmp3 *link*
-•  ${prefix}ytmp4 *link*`
+•  ${prefix}ytmp4 *link*
 •  ${prefix}play *query*
 •  ${prefix}pin *link*
 •  ${prefix}fb *link*
 •  ${prefix}ig *link*
-•  ${prefix}mediafire *link*
+•  ${prefix}mediafire *link*`
 }
 
 const submenu2 = prefix => {
