@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['owner'],
+   usage: ['ownerrr'],
    async: async (m, {
       client
    }) => {

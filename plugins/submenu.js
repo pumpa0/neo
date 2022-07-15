@@ -16,21 +16,13 @@ exports.run = {
 }
 
 const submenu1 = prefix => {
-   return `•  ${prefix}tiktok *link*
-•  ${prefix}tikmp3 *link*
-•  ${prefix}tikwm *link*
-•  ${prefix}twitter *link*
-•  ${prefix}ytmp3 *link*
-•  ${prefix}ytmp4 *link*
-•  ${prefix}play *query*
-•  ${prefix}pin *link*
-•  ${prefix}fb *link*
-•  ${prefix}ig *link*
-•  ${prefix}mediafire *link*`
-}
+   return `
+*PROFILE*
+•  ${prefix}limit
+•  ${prefix}me
 
-const submenu2 = prefix => {
-   return `•  ${prefix}antidelete *on / off*
+
+*GROUP*
 •  ${prefix}antilink *on / off*
 •  ${prefix}antivirtex *on / off*
 •  ${prefix}filter *on / off*
@@ -46,24 +38,33 @@ const submenu2 = prefix => {
 •  ${prefix}setleft *text*
 •  ${prefix}setwelcome *text*
 •  ${prefix}kick *mention or reply*
-•  ${prefix}demote *mention or reply*`
-}
+•  ${prefix}demote *mention or reply*  
+   
 
-const submenu3 = prefix => {
-   return `•  ${prefix}limit
-•  ${prefix}me`
-}
+*DOWNLOADER*
+•  ${prefix}tiktok *link*
+•  ${prefix}tikmp3 *link*
+•  ${prefix}tikwm *link*
+•  ${prefix}twitter *link*
+•  ${prefix}ytmp3 *link*
+•  ${prefix}ytmp4 *link*
+•  ${prefix}play *query*
+•  ${prefix}pin *link*
+•  ${prefix}fb *link*
+•  ${prefix}ig *link*
+•  ${prefix}mediafire *link*
 
-const submenu4 = prefix => {
-   return `•  ${prefix}ava *mention or reply*
+
+*OTHER*
+•  ${prefix}ava *mention or reply*
 •  ${prefix}q *reply chat*
 •  ${prefix}run
 •  ${prefix}response *url*
-•  ${prefix}sticker *reply media*`
-}
+•  ${prefix}sticker *reply media*
 
-const submenu5 = prefix => {
-   return `•  ${prefix}autodownload *on / off*
+
+*OWNER*
+•  ${prefix}autodownload *on / off*
 •  ${prefix}autoread *on / off*
 •  ${prefix}backup
 •  ${prefix}ban *mention or reply*
@@ -95,5 +96,6 @@ const submenu5 = prefix => {
 •  ${prefix}+mimic *mention or reply*
 •  ${prefix}online *on / off*
 •  ${prefix}-owner *mention or reply*
-•  ${prefix}+owner *mention or reply*`
+•  ${prefix}+owner *mention or reply*
+`
 }
