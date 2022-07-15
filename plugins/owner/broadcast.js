@@ -12,8 +12,8 @@ exports.run = {
          if (command == 'bc') {
             let buttons = [{
                urlButton: {
-                  displayText: `Rest API`,
-                  url: `https://api.neoxr.my.id`
+                  displayText: `Join`,
+                  url: `https://chat.whatsapp.com/KBxslpQTy08Djs32qK2TJQ`
                }
             }]
             if (text) {
