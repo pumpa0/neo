@@ -179,8 +179,8 @@ const connect = async () => {
    client.ev.on('group-participants.update', async (room) => {
       let meta = await (await client.groupMetadata(room.id))
       let member = room.participants[0]
-      let text_welcome = `Thank you +tag for joining into +grup group.`
-      let text_left = `+tag left from this group for no apparent reason.`
+      let text_welcome = ` +tag Gak intro di entod `
+      let text_left = `+tag keluar beli gorengan`
       let groupSet = global.db.groups[room.id]
       if (room.action == 'add') {
          if (groupSet.localonly) {
