@@ -18,9 +18,7 @@ exports.run = {
 const submenu1 = prefix => {
    return `
 *PROFILE*
-•  ${prefix}limit
 •  ${prefix}me
-
 
 *GROUP*
 •  ${prefix}antilink *on / off*
@@ -39,7 +37,6 @@ const submenu1 = prefix => {
 •  ${prefix}setwelcome *text*
 •  ${prefix}kick *mention or reply*
 •  ${prefix}demote *mention or reply*  
-   
 
 *DOWNLOADER*
 •  ${prefix}tiktok *link*
@@ -54,14 +51,9 @@ const submenu1 = prefix => {
 •  ${prefix}ig *link*
 •  ${prefix}mediafire *link*
 
-
 *OTHER*
 •  ${prefix}ava *mention or reply*
-•  ${prefix}q *reply chat*
-•  ${prefix}run
-•  ${prefix}response *url*
 •  ${prefix}sticker *reply media*
-
 
 *OWNER*
 •  ${prefix}autodownload *on / off*
@@ -72,7 +64,6 @@ const submenu1 = prefix => {
 •  ${prefix}block *mention or reply*
 •  ${prefix}unblock *mention or reply*
 •  ${prefix}chatbot *on / off*
-•  ${prefix}debug *on / off*
 •  ${prefix}prefix *symbol*
 •  ${prefix}-prefix *symbol*
 •  ${prefix}+prefix *symbol*
@@ -92,8 +83,6 @@ const submenu1 = prefix => {
 •  ${prefix}setpp *reply photo*
 •  ${prefix}setmsg *text*
 •  ${prefix}setwm *packname* | *author*
-•  ${prefix}-mimic *mention or reply*
-•  ${prefix}+mimic *mention or reply*
 •  ${prefix}online *on / off*
 •  ${prefix}-owner *mention or reply*
 •  ${prefix}+owner *mention or reply*
