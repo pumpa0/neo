@@ -19,8 +19,8 @@ global.forwards = '6285731855426@c.us'
 // Get neoxr apikey by registering at https://api.nxr.my.id
 global.Api = new (require('./HanBotzApi'))('q7nMK1')
 // Get bid and key configuration for autoreply chat ai feature by registering at https://brainshop.ai
-global.chatai_bid = '168058'
-global.chatai_key = '8uOEiYGNCTwAiE0k'
+global.chatai_bid = '164728'
+global.chatai_key = 'MKPsfkgXLZPGrWoH'
 // Footer text
 global.footer = 'HanBotzX'
 // Global status
