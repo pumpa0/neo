@@ -55,36 +55,7 @@ const submenu1 = prefix => {
 •  ${prefix}ava *mention or reply*
 •  ${prefix}sticker *reply media*
 
-*OWNER*
-•  ${prefix}autodownload *on / off*
-•  ${prefix}autoread *on / off*
-•  ${prefix}backup
-•  ${prefix}ban *mention or reply*
-•  ${prefix}unban *mention or reply*
-•  ${prefix}block *mention or reply*
-•  ${prefix}unblock *mention or reply*
-•  ${prefix}chatbot *on / off*
-•  ${prefix}prefix *symbol*
-•  ${prefix}-prefix *symbol*
-•  ${prefix}+prefix *symbol*
-•  ${prefix}cmdstic
-•  ${prefix}-cmdstic *reply sticker*
-•  ${prefix}+cmdstic *reply sticker*  
-•  ${prefix}disable *command*
-•  ${prefix}enable *command*
-•  ${prefix}-prem *mention or reply*
-•  ${prefix}+prem *mention or reply*
-•  ${prefix}multiprefix *on / off*
-•  ${prefix}plugen *plugin*
-•  ${prefix}plugdis *plugin*
-•  ${prefix}join *link*
-•  ${prefix}restart
-•  ${prefix}self *on / off*
-•  ${prefix}setpp *reply photo*
-•  ${prefix}setmsg *text*
-•  ${prefix}setwm *packname* | *author*
-•  ${prefix}online *on / off*
-•  ${prefix}-owner *mention or reply*
-•  ${prefix}+owner *mention or reply*
+
+Fitur Lainnya Di https://hanbotz.xyz
 `
 }
