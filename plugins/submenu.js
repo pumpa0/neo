@@ -56,6 +56,7 @@ const submenu1 = prefix => {
 •  ${prefix}sticker *reply media*
 
 
-Fitur Lainnya Di https://hanbotz.xyz
+Fitur Lainnya
+https://wa.me/message/VTHFK6TNGGZ5H1
 `
 }
