@@ -7,12 +7,14 @@ exports.run = {
          let users = Object.entries(global.db.users).length
          let chats = Object.keys(global.db.chats).filter(v => v.endsWith('.net')).length
          let groups = Object.entries(global.db.groups).length
+         let banned = Object.entries(global.db.users).filter(([jid, data]) => data.banned).length
          let premium = Object.entries(global.db.users).filter(([jid, data]) => data.premium).length
          const stats = {
             users,
             chats,
             groups,
             mimic: (global.db.setting.mimic).length,
+            banned,
             premium,
             uptime: Func.toTime(process.uptime() * 1000)
          }
@@ -39,7 +41,7 @@ const statistic = (stats, system) => {
 	◦  ${Func.texted('bold', stats.groups)} Groups Joined
 	◦  ${Func.texted('bold', stats.chats)} Personal Chats
 	◦  ${Func.texted('bold', stats.users)} Users In Database
-	◦  ${Func.texted('bold', stats.mimic)} Mimic Target
+	◦  ◦  ${Func.texted('bold', stats.banned)} Users Banned
 	◦  ${Func.texted('bold', stats.premium)} Premium Users
 
 乂  *S Y S T E M*
