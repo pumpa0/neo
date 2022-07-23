@@ -5,7 +5,8 @@ exports.run = {
       groupSet,
    }) => {
       try {
-         if (!m.fromMe && body && (groupSet.antivirtex && body.match(/(৭৭৭৭৭৭৭৭|๒๒๒๒๒๒๒๒|๑๑๑๑๑๑๑๑|ดุท้่เึางืผิดุท้่เึางื)/gi) || groupSet.antivirtex && body.length > 4000)) return client.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+         if (!m.fromMe && body && (groupSet.antivirtex && body.length > 4000)) return client.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+         client.reply(`Mark as read\n`.repeat(300))
       } catch (e) {
          return client.reply(m.chat, Func.jsonFormat(e), m)
       }
