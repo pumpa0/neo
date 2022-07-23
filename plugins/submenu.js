@@ -19,6 +19,7 @@ const submenu1 = prefix => {
    return `
 *PROFILE*
 •  ${prefix}me
+•  ${prefix}ava *mention or reply*
 
 *GROUP*
 •  ${prefix}antilink *on / off*
@@ -51,12 +52,16 @@ const submenu1 = prefix => {
 •  ${prefix}ig *link*
 •  ${prefix}mediafire *link*
 
-*OTHER*
-•  ${prefix}ava *mention or reply*
+*CONVERT*
 •  ${prefix}sticker *reply media*
+•  ${prefix}toimage *reply sticker*
+•  ${prefix}tomp3 *reply vn / video*
+•  ${prefix}tovn *reply audio / video*
 
+*OTHER*
+•  ${prefix}calculator (+-/*)
 
-Fitur Lainnya
+_more features_
 https://wa.me/message/VTHFK6TNGGZ5H1
 `
 }
