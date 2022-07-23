@@ -59,7 +59,7 @@ const submenu1 = prefix => {
 •  ${prefix}tovn *reply audio / video*
 
 *OTHER*
-•  ${prefix}calculator (+-/*)
+•  ${prefix}calculator *(+ - ÷ ×)*
 
 _more features_
 https://wa.me/message/VTHFK6TNGGZ5H1
