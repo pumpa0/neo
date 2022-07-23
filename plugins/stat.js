@@ -23,7 +23,7 @@ exports.run = {
             title: '© HanBotzX',
             ads: false,
             largeThumb: true,
-            thumbnail: await Func.fetchBuffer('https://telegra.ph/file/bf9a6987a268545279452.jpg')
+            thumbnail: await Func.fetchBuffer('https://telegra.ph/file/7f809140953a10189997d.jpg')
          })
       } catch (e) {
          client.reply(m.chat, Func.jsonFormat(e), m)
@@ -36,15 +36,15 @@ exports.run = {
 }
 
 const statistic = (stats, system) => {
-   return `乂  *B O T S T A T*
+   return `  *B O T S T A T*
 
 	◦  ${Func.texted('bold', stats.groups)} Groups Joined
 	◦  ${Func.texted('bold', stats.chats)} Personal Chats
 	◦  ${Func.texted('bold', stats.users)} Users In Database
-	◦  ◦  ${Func.texted('bold', stats.banned)} Users Banned
+	◦  ${Func.texted('bold', stats.banned)} Users Banned
 	◦  ${Func.texted('bold', stats.premium)} Premium Users
 
-乂  *S Y S T E M*
+  *S Y S T E M*
 
 	◦  ${system.autodownload ? '🟢' : '🔴'}  Auto Download
 	◦  ${system.chatbot ? '🟢' : '🔴'}  Chat AI
