@@ -48,10 +48,11 @@ const statistic = (stats, system) => {
 	•  ${Func.texted('bold', stats.groups)} Groups Joined
 	•  ${Func.texted('bold', stats.chats)} Personal Chats
 	•  ${Func.texted('bold', stats.users)} Users In Database
+        •  ${Func.texted('bold', stats.hitstat)} Commands Hit
 	•  ${Func.texted('bold', stats.banned)} Users Banned
 	•  ${Func.texted('bold', stats.premium)} Premium Users
-        •  ${Func.texted('bold', stats.hitstat)} Commands Hit
 	•  Runtime : ${Func.texted('bold', stats.uptime)}
+
   *S Y S T E M*
 	•  ${Func.texted('bold', system.autodownload ? '[ √ ]' : '[ × ]')}  Auto Download
 	•  ${Func.texted('bold', system.chatbot ? '[ √ ]' : '[ × ]')}  Chat AI
