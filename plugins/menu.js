@@ -10,8 +10,7 @@ exports.run = {
          description: ``
       }]
       let text = '• *Group* : https://chat.whatsapp.com/KBxslpQTy08Djs32qK2TJQ\n'
-      text += '• *Donate* : https://saweria.co/HanBotz\n\n'
-      text += 'Fitur lainnya di hanbotz.xyz'
+      text += '• *Donate* : https://saweria.co/HanBotz\n'
       await client.sendList(m.chat, '', text, '© 2022 HanBotzX', 'Tap!', [{
          rows
       }], m)
