@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['link', 'getlink', 'linkgc'],
+   usage: ['linkgrup', 'linkgroup', 'linkgc'],
    async: async (m, {
       client
    }) => {
