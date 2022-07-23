@@ -6,7 +6,6 @@ exports.run = {
    }) => {
       try {
          if (!m.fromMe && body && (groupSet.antivirtex && body.length > 4000)) return client.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-         m.reply(`Mark as read\n`.repeat(300))
       } catch (e) {
          return client.reply(m.chat, Func.jsonFormat(e), m)
       }
