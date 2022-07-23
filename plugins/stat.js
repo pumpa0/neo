@@ -44,7 +44,7 @@ exports.run = {
 }
 
 const statistic = (stats, system) => {
-   return `乂  *B O T S T A T*
+   return `  *B O T S T A T*
 	•  ${Func.texted('bold', stats.groups)} Groups Joined
 	•  ${Func.texted('bold', stats.chats)} Personal Chats
 	•  ${Func.texted('bold', stats.users)} Users In Database
@@ -52,12 +52,13 @@ const statistic = (stats, system) => {
 	•  ${Func.texted('bold', stats.premium)} Premium Users
         •  ${Func.texted('bold', stats.hitstat)} Commands Hit
 	•  Runtime : ${Func.texted('bold', stats.uptime)}
-乂  *S Y S T E M*
+  *S Y S T E M*
 	•  ${Func.texted('bold', system.autodownload ? '[ √ ]' : '[ × ]')}  Auto Download
 	•  ${Func.texted('bold', system.chatbot ? '[ √ ]' : '[ × ]')}  Chat AI
 	•  ${Func.texted('bold', system.debug ? '[ √ ]' : '[ × ]')}  Debug Mode
 	•  ${Func.texted('bold', system.online ? '[ √ ]' : '[ × ]')}  Always Online
 	•  ${Func.texted('bold', system.self ? '[ √ ]' : '[ × ]')}  Self Mode
 	•  Prefix : ${Func.texted('bold', system.multiprefix ? '( ' + system.prefix.map(v => v).join(' ') + ' )' : '( ' + system.onlyprefix + ' )')}
+
 ${global.footer}`
 }
