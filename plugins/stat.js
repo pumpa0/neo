@@ -9,6 +9,13 @@ exports.run = {
          let groups = Object.entries(global.db.groups).length
          let banned = Object.entries(global.db.users).filter(([jid, data]) => data.banned).length
          let premium = Object.entries(global.db.users).filter(([jid, data]) => data.premium).length
+         class Hit extends Array {
+            total(key) {
+               return this.reduce((a, b) => a + (b[key] || 0), 0)
+            }
+         }
+         let sum = new Hit(...Object.values(global.db.statistic))
+         let hitstat = sum.total('hitstat') != 0 ? sum.total('hitstat') : 0
          const stats = {
             users,
             chats,
@@ -16,6 +23,7 @@ exports.run = {
             mimic: (global.db.setting.mimic).length,
             banned,
             premium,
+            hitstat,
             uptime: Func.toTime(process.uptime() * 1000)
          }
          const system = global.db.setting
@@ -42,6 +50,7 @@ const statistic = (stats, system) => {
 	•  ${Func.texted('bold', stats.users)} Users In Database
 	•  ${Func.texted('bold', stats.banned)} Users Banned
 	•  ${Func.texted('bold', stats.premium)} Premium Users
+        •  ${Func.texted('bold', stats.hitstat)} Commands Hit
 	•  Runtime : ${Func.texted('bold', stats.uptime)}
 乂  *S Y S T E M*
 	•  ${Func.texted('bold', system.autodownload ? '[ √ ]' : '[ × ]')}  Auto Download
